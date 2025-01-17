@@ -1,0 +1,69 @@
+/** {
+  border: 1px solid red;
+  min-height: 15px;
+} /** Estilos para lineas de guia **/
+
+* {
+    font-family: "Noto Sans PhagsPa", sans-serif;
+}
+
+body {
+    padding: 100px;
+    background-color: black;
+}
+
+.main {
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/** Estilos para el postHeader **/
+.postHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.postHeader i {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.postHeader p {
+    line-height: 14px;
+}
+
+.postHeader i:last-child {
+    margin-left: auto;
+}
+
+/** En lugar de esto tambien podriamos incluir otro div con clase left y realizar un space-between, pero me gusta mas asi ya que mantiene un margen auto **/
+
+/** Estilos para el postImg **/
+.postImg img {
+    width: 100%;
+}
+
+/** Estilos para el postFooter **/
+.postFooter {
+    padding: 10px;
+}
+
+/** Estilos para el postIcons **/
+.postIcons,
+.leftSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.postIcons i:not(i[class*="fa-bookmark"]) {
+    margin-right: 5px;
+}
+
+/** Estilos para el postInfo **/
+.postInfo {
+    text-align: justify;
+}
